@@ -55,7 +55,7 @@ ol {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #212121;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -83,5 +83,5 @@ ol {
   border-right: none;
 }
 .active {
-  background-color: #4CAF50;
+  background-color: #cc5500; /* green #4CAF50;*/
 }
