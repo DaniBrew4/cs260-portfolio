@@ -93,10 +93,14 @@ a:hover {
   }
   .content {
     order: 1;
+    height: 2000px;
   }
   .feature-1, .feature-2, .feature-3{
     margin-top: auto;
     height: auto;
+  }
+  .grid-item {
+    width: 75%;
   }
 }
 /* Tablet Styles */
