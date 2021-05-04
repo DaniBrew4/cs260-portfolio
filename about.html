@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset='UTF-8'/>
     <link rel='stylesheet' href='styles.css'/>
     <title>About Me</title>
   </head>
   <body>
-      <ul class ="menu-ul">
-        <li><a href="/index.html.html">Home</a></li>
+
+    <div class='header'>
+      <ul class='menu'>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/news.html">News</a></li>
-        <li><a href="/services.html">Services</a></li>
+        <li class='dropdown'><span><a href="/services.html">Services  ▾</a></span>
+          <ul class='services-menu'>           <!-- Start of submenu -->
+            <li><a href='#'>Web Design</a></li>
+            <li><a href='#'>Online Courses</a></li>
+            <li><a href='#'>Rentals</a></li>
+            <li><a href='#'>Dog Breeding</a></li>
+          </ul>
+        </li>
         <li><a class="active" href="/about.html">About</a></li>
-        <li style="float:right"><a class="active" href="login.asp">Log In</a></li>
+        <li><a class="active" href="login.asp">Log In</a></li>
       </ul>
-    <h1><strong>Daniel Brewer</strong></h1>
-    <img style="float:left" src='images/brewer-01.01.2021.jpg' width='437' alt='Our family this last Christmas'/>
-    <h2>ABOUT ME</h2>
-    <p>I am a Statistitian studying Data Science and with a minor in Computer Science.
-      My hobbies include training for triathlons and hiking. I love playing any sport and being outside.
-      I am married to my lovely wife Celeste and we have our first baby due May 23rd!</p>
-    <h2>PROJECTS</h2>
-    <ol>
-      <li><em>Pose-Verification: <a href='https://www.mutual.app/'
-      target = '_blank'>Mutual</a></em><br>
-        For my Statistics and Data Science Capstone my team and I created a Machine learning algorithm using Nueral Nets to help increase scammer detection when new accounts are created.
-        In our algorithm we detect wether or not a new user is doing the pose asked in a live photo at the time of creation. We classified and cleaned the data, trained the models, and
-        set up a working api for <strong>Mutual</strong> to and recieve their responses. We were able to cut the amount of time spent manually approving photos by<em>74%</em> with a 1.9%
-        false negative rate.</li>
-      <li><em>On campus Internship: Knitwork</em><br>
-        Full stack devolpment for a start up company built to help returning mothers to the work force by verifying through test that they are still qualified in the desired skills of the
-        employer. I specifically helped create the database and matching algorithm between employers and job seekers to help companies see potential employees that met desired criteria in
-        match percentage rankings. Intership won 2nd place $10,000 Lassonde Entrepreneur Internship award.</li>
-      <li><em>BYU Broadcasting Data Collection</em><br>
-        Created natural language processing (NLP) models to automate open-ended survey data analysis. Automated data collection and cleaning from BYU Radio media access log files for podcast
-        and digital, on-demand request from listeners.</li>
-    </ol>
-    <h2>EXPERIENCE</h2>
-    <ol>
-      <li>Data Analyst · Brigham Young University, BYUB - 09/16/2020 – Present</li>
-      <li>Data Science Capstone · Brigham Young University · Mutual - 08/28/2020 – 04/21/2021</li>
-      <li>Data Specialist · Brigham Young University, BYUB – 04/25/2020 - 08/25/2020</li>
-      <li>On Campus Internship · Brigham Young University · KnitWork – 01/06/2019 – 04/12/2019</li>
-    </ol>
-    <h2>CONTACT</h2>
-    <p>Visit my <a href='https://github.com/DaniBrew4'
-    target = '_blank'>GitHub</a> or <a href='https://www.linkedin.com/in/danielbrewer22/'
-    target = '_blank'>LinkedIn</a> accounts to see more detailed explinations of my work.</p>
+    </div>
+
+    <div class='sidebar'>
+      <img src='images/brewer-01.01.2021.jpg'  width='400' alt='Our family this last Christmas'/>
+    </div>
+
+    <div class='container'>
+      <div class='grid'>
+        <div class='grid-item'>
+          <h1><strong>Daniel Brewer</strong></h1>
+        </div>
+        <div class='grid-item'>
+          <h2>ABOUT ME</h2>
+        </div>
+        <div class='grid-item'>
+          <p>I am a Statistitian studying Data Science and with a minor in Computer Science.
+            My hobbies include training for triathlons and hiking. I love playing any sport and being outside.
+            I am married to my lovely wife Celeste and we have our first baby due May 23rd!</p>
+        </div>
+        <div class='grid-item'>
+          <h2>PROJECTS</h2>
+        </div>
+        <div class='grid-item'>
+          <ul>
+            <li><em>Pose-Verification: <a href='https://www.mutual.app/'
+            target = '_blank'>Mutual</a></em><br>
+              For my Statistics and Data Science Capstone my team and I created a Machine learning algorithm using Nueral Nets to help increase scammer detection when new accounts are created.
+              In our algorithm we detect wether or not a new user is doing the pose asked in a live photo at the time of creation. We classified and cleaned the data, trained the models, and
+              set up a working api for <strong>Mutual</strong> to and recieve their responses. We were able to cut the amount of time spent manually approving photos by<em>74%</em> with a 1.9%
+              false negative rate.</li>
+            <li><em>On campus Internship: Knitwork</em><br>
+              Full stack devolpment for a start up company built to help returning mothers to the work force by verifying through test that they are still qualified in the desired skills of the
+              employer. I specifically helped create the database and matching algorithm between employers and job seekers to help companies see potential employees that met desired criteria in
+              match percentage rankings. Intership won 2nd place $10,000 Lassonde Entrepreneur Internship award.</li>
+            <li><em>BYU Broadcasting Data Collection</em><br>
+              Created natural language processing (NLP) models to automate open-ended survey data analysis. Automated data collection and cleaning from BYU Radio media access log files for podcast
+              and digital, on-demand request from listeners.</li>
+          </ul>
+        </div>
+        <div class='grid-item'>
+          <h2>EXPERIENCE</h2>
+        </div>
+        <div class='grid-item'>
+          <ul>
+            <li>Data Analyst · Brigham Young University, BYUB - 09/16/2020 – Present</li>
+            <li>Data Science Capstone · Brigham Young University · Mutual - 08/28/2020 – 04/21/2021</li>
+            <li>Data Specialist · Brigham Young University, BYUB – 04/25/2020 - 08/25/2020</li>
+            <li>On Campus Internship · Brigham Young University · KnitWork – 01/06/2019 – 04/12/2019</li>
+          </ul>
+        </div>
+        <div class='grid-item'>
+          <h2>CONTACT</h2>
+        </div>
+        <div class='grid-item'>
+          <p>Visit my <a href='https://github.com/DaniBrew4'
+          target = '_blank'>GitHub</a> or <a href='https://www.linkedin.com/in/danielbrewer22/'
+          target = '_blank'>LinkedIn</a> accounts to see more detailed explinations of my work.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='footer'>
+      <div class='column'></div>
+      <div class='column'></div>
+      <div class='column'></div>
+    </div>
+
   </body>
 </html>
